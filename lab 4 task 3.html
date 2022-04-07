@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p style="color: blue; text-align: center;">Click the button below to run the program.</p>
+
+<button style="position: absolute; left: 46% ;border-radius: 1.5em; color: red;" onclick="myFunction()">Click Here</button>
+
+<br>
+<br>
+<p style="text-align: center;" id="output"></p>
+
+<script>
+function myFunction() {
+
+  do
+  {
+  let response = prompt("Alarm is ringing//Press S to snooze and D to dismiss");
+  if(response == "D")
+  {
+  document.getElementById("output").innerHTML = "Good Morning";
+  
+  }
+  else if (response == "S") 
+  {
+document.getElementById("output").innerHTML = "Snoozed.";
+  }
+  else
+  {
+  document.getElementById("output").innerHTML = "Invalid Input Program Ended";
+  
+  }
+
+}
+while(response=="S");
+}
+</script>
+
+</body>
+</html>
